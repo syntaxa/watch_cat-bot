@@ -86,7 +86,8 @@ function requestDataWithCaptcha(ctx) {
 
 function showResult(ctx, resp) {
   var row = resp.rows[0];
-  var responseMarkdown = `\`Последние поданные документы на регистрацию\`
+
+  var responseMarkdown = (row == null) ? `Сведения о представлении в регистрирующий (налоговый) орган документов за последний год отсутствуют.` : `\`Последние поданные документы на регистрацию\`
 
 *Дата представления:* ${row.DT}
 *Вид изменений:* ${row.IZM}
