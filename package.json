@@ -2,31 +2,16 @@
   "name": "watch-cat-bot",
   "version": "1.0.0",
   "description": "Telegram Bot for mah life",
-  "main": "index.js",
+  
   "dependencies": {
-    "botgram": "^2.0.1"    
+    "cheerio": "^0.22.0",
+    "telegraf": "^3.10.1",
+    "request": "^2.x"
   },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^4.18.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1"
+    "engines": {
+    "node": "8.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/syntaxa/watch_cat-bot.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/syntaxa/watch_cat-bot/issues"
-  },
-  "homepage": "https://github.com/syntaxa/watch_cat-bot#readme"
+    "start": "node tele.js"
+  }  
 }
